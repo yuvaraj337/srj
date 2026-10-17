@@ -1,0 +1,19 @@
+BUILD OFFLINE SRJ ANDROID APK
+
+Option A — Android Studio:
+1. Install Android Studio and Android SDK Platform 35.
+2. Open this folder as an existing Gradle project.
+3. Let Gradle download build dependencies while internet is available.
+4. Choose Build > Build Bundle(s) / APK(s) > Build APK(s).
+5. Install app/build/outputs/apk/debug/app-debug.apk on the Android phone.
+6. After installation, turn off Wi-Fi and mobile data and test the app.
+
+Option B — GitHub Actions:
+1. Create a private GitHub repository.
+2. Upload the contents of this project folder, including the hidden .github folder.
+3. Open Actions and run the workflow.
+4. Download the APK artifact from a successful workflow run.
+
+This application is intended to store data locally on the phone and has no INTERNET permission. It does not use Supabase or any cloud service at runtime.
+
+Test with fictional records first. Create an encrypted backup and test restoring it before entering real customer data.
